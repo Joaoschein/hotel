@@ -1,11 +1,15 @@
 package br.com.hotel.hotel.service;
 
+import br.com.hotel.hotel.model.quartoModel.QuartoRequest;
+import br.com.hotel.hotel.model.quartoModel.QuartoResponse;
+
+import java.util.List;
+
 public interface QuartoService {
 
-    QuartoResponse create(QuartoRequest request);
-    List<QuartoResponse> getAll();
-    ClienteResponse newCliente(ClienteRequest request);
-    ClienteResponse findClienteById(ClienteRequest request);
+    QuartoResponse newQuarto(QuartoRequest request);
+    List<QuartoResponse> findAllQuartos();
+
 
 
 }

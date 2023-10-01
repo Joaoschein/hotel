@@ -1,13 +1,17 @@
 package br.com.hotel.hotel.persistence.entity;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document
+
 @Getter
 @Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode
+@Document(collection = "quanrtos")
 public class Quarto {
 
     @Id

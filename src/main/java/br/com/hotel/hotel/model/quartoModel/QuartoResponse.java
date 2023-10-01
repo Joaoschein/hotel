@@ -1,10 +1,13 @@
-package br.com.hotel.hotel.model;
+package br.com.hotel.hotel.model.quartoModel;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode
 public class QuartoResponse {
 
     private int numero;
