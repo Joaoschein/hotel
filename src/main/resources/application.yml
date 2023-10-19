@@ -4,4 +4,6 @@ spring:
       host: localhost
       database: mongodb
       port: 27017
+server:
+  port: 8081
 

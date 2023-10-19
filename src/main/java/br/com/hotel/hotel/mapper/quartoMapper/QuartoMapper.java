@@ -7,9 +7,12 @@ public class QuartoMapper {
 
     public static QuartoResponse quartoModelToResponseMapper (Quarto quarto) {
         return QuartoResponse.builder()
+                .id(quarto.getId())
                 .situacao(quarto.getSituacao())
-                .numeroDeCamas(quarto.getNumeroDeCamas())
                 .numero(quarto.getNumero())
+                .tipo(quarto.getTipo())
+                .descricao(quarto.getDescricao())
+                .valor(quarto.getValor())
                 .build();
     }
 }

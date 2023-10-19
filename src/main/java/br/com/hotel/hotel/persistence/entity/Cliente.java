@@ -4,6 +4,8 @@ import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.time.LocalDate;
+
 
 @Getter
 @Setter
@@ -19,6 +21,13 @@ public class Cliente {
     private String nome;
     private String cpf;
     private String email;
+    private String endereco;
+    private String cidade;
+    private String situacao;
+    private int quartoReservado;
+    private LocalDate checkin;
+    private LocalDate checkout;
+    private long pagamento;
 }
 
 

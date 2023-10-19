@@ -11,6 +11,13 @@ public class ClienteMapper {
                 .cpf(cliente.getCpf())
                 .email(cliente.getEmail())
                 .nome(cliente.getNome())
+                .cidade(cliente.getCidade())
+                .endereco(cliente.getEndereco())
+                .situacao(cliente.getSituacao())
+                .checkin(cliente.getCheckin())
+                .checkout(cliente.getCheckout())
+                .quartoReservado(cliente.getQuartoReservado())
+                .pagamento(cliente.getPagamento())
                 .id(cliente.getId())
                 .build();
     }

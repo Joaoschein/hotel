@@ -10,7 +10,10 @@ import java.util.Optional;
 public interface ClienteService {
 
     ClienteResponse newCliente(ClienteRequest request);
-    Cliente findClienteByCPF(String CPF);
+    ClienteResponse findClienteByCPF(String CPF);
     List<ClienteResponse> findAllClientes();
+    Void deleteCliente(String id);
+    Void checkin(String cpf);
+    Void checkout(String cpf);
 
 }

@@ -10,7 +10,10 @@ import lombok.*;
 @EqualsAndHashCode
 public class QuartoResponse {
 
+    private String id;
     private int numero;
     private String situacao;
-    private int numeroDeCamas;
+    private long valor;
+    private String descricao;
+    private String tipo;
 }
